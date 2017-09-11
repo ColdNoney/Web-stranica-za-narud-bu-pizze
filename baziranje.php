@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="jquery-3.2.1.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="script.js"></script>
 	</head>
@@ -22,7 +22,7 @@
 		</div>
 	</div>
 
-	</br>
+	<br>
 	
 	<p id="broj"> </p>
 	
@@ -42,7 +42,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="" id="upaliKukuruz"> Kukuruz </label>
+							  <label><input type="checkbox" value="" id="upaliKukuruzL"> Kukuruz </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -50,7 +50,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Rajčica </label>
+							  <label><input type="checkbox" value="" id="upaliRajcica"> Rajčica </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -58,7 +58,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Sir </label>
+							  <label><input type="checkbox" value="" id="upaliSirL"> Sir </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -66,7 +66,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Paprika </label>
+							  <label><input type="checkbox" value="" id="upaliPaprikaL"> Paprika </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -74,7 +74,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Gljive </label>
+							  <label><input type="checkbox" value="" id="upaliGljiveL"> Gljive </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -82,7 +82,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Kulen </label>
+							  <label><input type="checkbox" value="" id="upaliKulenL"> Kulen </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -90,7 +90,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Luk </label>
+							  <label><input type="checkbox" value="" id="upaliLukL"> Luk </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -98,7 +98,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Masline </label>
+							  <label><input type="checkbox" value="" id="upaliMaslineL"> Masline </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -106,15 +106,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Salata </label>
-							</div>
-							</td>
-							<td>+1 kn</td>
-						  </tr>
-						  <tr>
-							<<td>
-							<div class="checkbox">
-							  <label><input type="checkbox" value=""> 4 vrste sira </label>
+							  <label><input type="checkbox" value="" id="upaliSalataL"> Salata </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -122,7 +114,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Tuna </label>
+							  <label><input type="checkbox" value="" id="upaliSir4L"> 4 vrste sira </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -130,7 +122,15 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Šunka </label>
+							  <label><input type="checkbox" value="" id="upaliTunaL"> Tuna </label>
+							</div>
+							</td>
+							<td>+1 kn</td>
+						  </tr>
+						  <tr>
+							<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value="" id="upaliSunkaL"> Šunka </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -144,47 +144,47 @@
 			<div class="col-lg-6">
 				<div class="slikaPizze" align="center">
 					<img src="Slike/pizza_prilozi/tijesto.png" alt="Responsive image" class="preslika">
-					<img src="Slike/pizza_prilozi/pizza_rajcica.png" alt="" class="preslika rajcica" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_kukuruz.png" alt="" class="preslika kukuruz" id="kukuruz">
-					<img src="Slike/pizza_prilozi/pizza_salata.png" alt="" class="preslika salata" style="display:none;" > 
-					<img src="Slike/pizza_prilozi/pizza_gljive.png" alt="" class="preslika gljive" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_sir.png" alt="" class="preslika sir" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_sir4.png" alt="" class="preslika sir4" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_masline.png" alt="" class="preslika masline" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_sunka.png" alt="" class="preslika sunka" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_tuna.png" alt="" class="preslika tuna" style="display:none;">
-					<img src="Slike/pizza_prilozi/pizza_paprika.png" alt="" class="preslika paprika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_kulen.png" alt="" class="preslika kulen" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_luk.png" alt="" class="preslika luk" style="display:none;">
-					<img src="Slike/pizza_prilozi/pizza_kukuruz_l.png" alt="" class="preslika kukuruzL" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_salata_l.png" alt="" class="preslika salataL" style="display:none;" > 
-					<img src="Slike/pizza_prilozi/pizza_gljive_l.png" alt="" class="preslika gljiveL" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_sir_l.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_sir4_l.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_masline_l.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_sunka_l.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_tuna_l.png" alt="" class="preslika" style="display:none;">
-					<img src="Slike/pizza_prilozi/pizza_paprika_l.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_kulen_l.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_luk_l.png" alt="" class="preslika" style="display:none;">
-					<img src="Slike/pizza_prilozi/pizza_kukuruz_d.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_salata_d.png" alt="" class="preslika" style="display:none;" > 
-					<img src="Slike/pizza_prilozi/pizza_gljive_d.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_sir_d.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_sir4_d.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_masline_d.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_sunka_d.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_tuna_d.png" alt="" class="preslika" style="display:none;">
-					<img src="Slike/pizza_prilozi/pizza_paprika_d.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_kulen_d.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_luk_d.png" alt="" class="preslika" style="display:none;">
+					<img src="Slike/pizza_prilozi/pizza_rajcica.png" alt="" class="preslika sakriveno" id="rajcica"> 
+					<img src="Slike/pizza_prilozi/pizza_kukuruz.png" alt="" class="preslika sakriveno" id="kukuruz">
+					<img src="Slike/pizza_prilozi/pizza_salata.png" alt="" class="preslika sakriveno" id="salata"> 
+					<img src="Slike/pizza_prilozi/pizza_gljive.png" alt="" class="preslika sakriveno" id="gljive"> 
+					<img src="Slike/pizza_prilozi/pizza_sir.png" alt="" class="preslika sakriveno" id="sir"> 
+					<img src="Slike/pizza_prilozi/pizza_sir4.png" alt="" class="preslika sakriveno" id="sir4"> 
+					<img src="Slike/pizza_prilozi/pizza_masline.png" alt="" class="preslika sakriveno" id="masline"> 
+					<img src="Slike/pizza_prilozi/pizza_sunka.png" alt="" class="preslika sakriveno" id="sunka"> 
+					<img src="Slike/pizza_prilozi/pizza_tuna.png" alt="" class="preslika sakriveno" id="tuna">
+					<img src="Slike/pizza_prilozi/pizza_paprika.png" alt="" class="preslika sakriveno" id="paprika"> 
+					<img src="Slike/pizza_prilozi/pizza_kulen.png" alt="" class="preslika sakriveno" id="kulen"> 
+					<img src="Slike/pizza_prilozi/pizza_luk.png" alt="" class="preslika sakriveno" id="luk">
+					<img src="Slike/pizza_prilozi/pizza_kukuruz_l.png" alt="" class="preslika sakriveno" id="kukuruzL"> 
+					<img src="Slike/pizza_prilozi/pizza_salata_l.png" alt="" class="preslika sakriveno" id="salataL"> 
+					<img src="Slike/pizza_prilozi/pizza_gljive_l.png" alt="" class="preslika sakriveno" id="gljiveL"> 
+					<img src="Slike/pizza_prilozi/pizza_sir_l.png" alt="" class="preslika sakriveno" id="sirL"> 
+					<img src="Slike/pizza_prilozi/pizza_sir4_l.png" alt="" class="preslika sakriveno" id="sir4L"> 
+					<img src="Slike/pizza_prilozi/pizza_masline_l.png" alt="" class="preslika sakriveno" id="maslineL"> 
+					<img src="Slike/pizza_prilozi/pizza_sunka_l.png" alt="" class="preslika sakriveno" id="sunkaL"> 
+					<img src="Slike/pizza_prilozi/pizza_tuna_l.png" alt="" class="preslika sakriveno" id="tunaL">
+					<img src="Slike/pizza_prilozi/pizza_paprika_l.png" alt="" class="preslika sakriveno" id="paprikaL"> 
+					<img src="Slike/pizza_prilozi/pizza_kulen_l.png" alt="" class="preslika sakriveno" id="kulenL"> 
+					<img src="Slike/pizza_prilozi/pizza_luk_l.png" alt="" class="preslika sakriveno" id="lukL">
+					<img src="Slike/pizza_prilozi/pizza_kukuruz_d.png" alt="" class="preslika sakriveno" id="kukuruzD"> 
+					<img src="Slike/pizza_prilozi/pizza_salata_d.png" alt="" class="preslika sakriveno" id="salataD"> 
+					<img src="Slike/pizza_prilozi/pizza_gljive_d.png" alt="" class="preslika sakriveno" id="gljiveD"> 
+					<img src="Slike/pizza_prilozi/pizza_sir_d.png" alt="" class="preslika sakriveno" id="sirD"> 
+					<img src="Slike/pizza_prilozi/pizza_sir4_d.png" alt="" class="preslika sakriveno" id="sir4D"> 
+					<img src="Slike/pizza_prilozi/pizza_masline_d.png" alt="" class="preslika sakriveno" id="maslineD"> 
+					<img src="Slike/pizza_prilozi/pizza_sunka_d.png" alt="" class="preslika sakriveno" id="sunkaD"> 
+					<img src="Slike/pizza_prilozi/pizza_tuna_d.png" alt="" class="preslika sakriveno" id="tunaD">
+					<img src="Slike/pizza_prilozi/pizza_paprika_d.png" alt="" class="preslika sakriveno" id="paprikaD"> 
+					<img src="Slike/pizza_prilozi/pizza_kulen_d.png" alt="" class="preslika sakriveno" id="kulenD"> 
+					<img src="Slike/pizza_prilozi/pizza_luk_d.png" alt="" class="preslika sakriveno" id="lukD">
 					<img src="Slike/pizza_prilozi/nista.png" alt="" class="nistaSlika"> 
 				</div>
 			</div>
 			
 			<!--Druga tablica sa sastojcima -->
 			<div class="col-lg-3">
-				<div id="tablicaD" class="hidden">
+				<div id="tablicaD" class="hiden">
 					<table id="hiddenTable" class="table table-hover tablicaD">
 						<thead>
 						  <tr>
@@ -196,7 +196,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Kukuruz </label>
+							  <label><input type="checkbox" value=""  id="upaliKukuruzD"> Kukuruz </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -204,7 +204,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Rajčica </label>
+							  <label><input type="checkbox" value="" id="upaliRajcica"> Rajčica </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -212,7 +212,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Sir </label>
+							  <label><input type="checkbox" value="" id="upaliSirD"> Sir </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -220,7 +220,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Paprika </label>
+							  <label><input type="checkbox" value="" id="upaliPaprikaD"> Paprika </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -228,7 +228,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Gljive </label>
+							  <label><input type="checkbox" value="" id="upaliGljiveD"> Gljive </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -236,7 +236,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Kulen </label>
+							  <label><input type="checkbox" value="" id="upaliKulenD"> Kulen </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -244,7 +244,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Luk </label>
+							  <label><input type="checkbox" value="" id="upaliLukD"> Luk </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -252,7 +252,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Masline </label>
+							  <label><input type="checkbox" value="" id="upaliMaslineD"> Masline </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -260,15 +260,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Salata </label>
-							</div>
-							</td>
-							<td>+1 kn</td>
-						  </tr>
-						  <tr>
-							<<td>
-							<div class="checkbox">
-							  <label><input type="checkbox" value=""> 4 vrste sira </label>
+							  <label><input type="checkbox" value="" id="upaliSalataD"> Salata </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -276,7 +268,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Tuna </label>
+							  <label><input type="checkbox" value="" id="upaliSir4D"> 4 vrste sira </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -284,7 +276,15 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Šunka </label>
+							  <label><input type="checkbox" value="" id="upaliTunaD"> Tuna </label>
+							</div>
+							</td>
+							<td>+1 kn</td>
+						  </tr>
+						  <tr>
+							<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value="" id="upaliSunkaD"> Šunka </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -292,7 +292,7 @@
 						</tbody>
 					</table>
 				</div>
-				<div id="tablica3" class="hiden">
+				<div id="tablica3" class="hidden">
 					<table id="hiddenTable" class="table table-hover">
 						<thead>
 						  <tr>
@@ -304,7 +304,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Kukuruz </label>
+							  <label><input type="checkbox" value="" id="upaliKukuruz"> Kukuruz </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -312,7 +312,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Rajčica </label>
+							  <label><input type="checkbox" value="" id="upaliRajcica"> Rajčica </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -320,7 +320,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Sir </label>
+							  <label><input type="checkbox" value="" id="upaliSir"> Sir </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -328,7 +328,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Paprika </label>
+							  <label><input type="checkbox" value="" id="upaliPaprika"> Paprika </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -336,7 +336,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Gljive </label>
+							  <label><input type="checkbox" value="" id="upaliGljive"> Gljive </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -344,7 +344,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Kulen </label>
+							  <label><input type="checkbox" value="" id="upaliKulen"> Kulen </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -352,7 +352,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Luk </label>
+							  <label><input type="checkbox" value="" id="upaliLuk"> Luk </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -360,7 +360,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Masline </label>
+							  <label><input type="checkbox" value="" id="upaliMasline"> Masline </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -368,15 +368,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Salata </label>
-							</div>
-							</td>
-							<td>+1 kn</td>
-						  </tr>
-						  <tr>
-							<<td>
-							<div class="checkbox">
-							  <label><input type="checkbox" value=""> 4 vrste sira </label>
+							  <label><input type="checkbox" value="" id="upaliSalata"> Salata </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -384,7 +376,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Tuna </label>
+							  <label><input type="checkbox" value="" id="upaliSir4"> 4 vrste sira </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -392,7 +384,15 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Šunka </label>
+							  <label><input type="checkbox" value="" id="upaliTuna"> Tuna </label>
+							</div>
+							</td>
+							<td>+1 kn</td>
+						  </tr>
+						  <tr>
+							<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value="" id="upaliSunka"> Šunka </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -404,8 +404,8 @@
 		</div>	
 	</div>
 	
-	</br>
-	</br>
+	<br>
+	<br>
 	
 	<!--Buttoni za odabir opcije narudzbe pizze-->
 	<div class="container">
@@ -437,11 +437,11 @@
 			  <option value="10">10</option>
 			</select>
 			<b class="izracunCijene"> Ukupna cijena: </b>
-			</br>
+			<br>
 		</div>
 	</div>
 	
-	</br>
+	<br>
 	
 	<div class="container" >
 		<div class="row justify-content-center">
@@ -455,7 +455,7 @@
 		</div>
 	</div>
 	
-	</br>
+	<br>
 	
 	<?php
 /*
