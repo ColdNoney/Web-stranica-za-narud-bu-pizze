@@ -31,6 +31,10 @@ button {
 	cursor: hand;
 }
 
+#kukuruz {
+	 display: none;
+}
+
 /*.container img {
 	display: block;
     margin-left: auto;

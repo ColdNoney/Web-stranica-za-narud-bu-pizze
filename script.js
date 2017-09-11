@@ -35,3 +35,14 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+$('#upaliKukuruz').on('click', function(){
+    if( $('#kukuruz').is(':hidden')) {
+    $('#kukuruz').show();
+    }else{
+    $('#kukuruz').hide();
+    }
+});
+
+var randomnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+ document.getElementById('broj').innerHTML = randomnumber;

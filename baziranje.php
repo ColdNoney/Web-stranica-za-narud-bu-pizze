@@ -7,12 +7,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		<script type="text/javascript" src="script.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="script.js"></script>
 	</head>
 
 	<body>
@@ -26,6 +23,8 @@
 	</div>
 
 	</br>
+	
+	<p id="broj"> </p>
 	
 	<!--Prva tablica sa sastojcima-->
 	<div class="container">    
@@ -43,7 +42,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value=""> Kukuruz </label>
+							  <label><input type="checkbox" value="" id="upaliKukuruz"> Kukuruz </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -145,21 +144,21 @@
 			<div class="col-lg-6">
 				<div class="slikaPizze" align="center">
 					<img src="Slike/pizza_prilozi/tijesto.png" alt="Responsive image" class="preslika">
-					<img src="Slike/pizza_prilozi/pizza_rajcica.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_kukuruz.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_salata.png" alt="" class="preslika" style="display:none;" > 
-					<img src="Slike/pizza_prilozi/pizza_gljive.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_sir.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_sir4.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_masline.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_sunka.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_tuna.png" alt="" class="preslika" style="display:none;">
-					<img src="Slike/pizza_prilozi/pizza_paprika.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_kulen.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_luk.png" alt="" class="preslika" style="display:none;">
-					<img src="Slike/pizza_prilozi/pizza_kukuruz_l.png" alt="" class="preslika" style="display:none;"> 
-					<img src="Slike/pizza_prilozi/pizza_salata_l.png" alt="" class="preslika" style="display:none;" > 
-					<img src="Slike/pizza_prilozi/pizza_gljive_l.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_rajcica.png" alt="" class="preslika rajcica" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_kukuruz.png" alt="" class="preslika kukuruz" id="kukuruz">
+					<img src="Slike/pizza_prilozi/pizza_salata.png" alt="" class="preslika salata" style="display:none;" > 
+					<img src="Slike/pizza_prilozi/pizza_gljive.png" alt="" class="preslika gljive" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_sir.png" alt="" class="preslika sir" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_sir4.png" alt="" class="preslika sir4" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_masline.png" alt="" class="preslika masline" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_sunka.png" alt="" class="preslika sunka" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_tuna.png" alt="" class="preslika tuna" style="display:none;">
+					<img src="Slike/pizza_prilozi/pizza_paprika.png" alt="" class="preslika paprika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_kulen.png" alt="" class="preslika kulen" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_luk.png" alt="" class="preslika luk" style="display:none;">
+					<img src="Slike/pizza_prilozi/pizza_kukuruz_l.png" alt="" class="preslika kukuruzL" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_salata_l.png" alt="" class="preslika salataL" style="display:none;" > 
+					<img src="Slike/pizza_prilozi/pizza_gljive_l.png" alt="" class="preslika gljiveL" style="display:none;"> 
 					<img src="Slike/pizza_prilozi/pizza_sir_l.png" alt="" class="preslika" style="display:none;"> 
 					<img src="Slike/pizza_prilozi/pizza_sir4_l.png" alt="" class="preslika" style="display:none;"> 
 					<img src="Slike/pizza_prilozi/pizza_masline_l.png" alt="" class="preslika" style="display:none;"> 
@@ -179,7 +178,7 @@
 					<img src="Slike/pizza_prilozi/pizza_paprika_d.png" alt="" class="preslika" style="display:none;"> 
 					<img src="Slike/pizza_prilozi/pizza_kulen_d.png" alt="" class="preslika" style="display:none;"> 
 					<img src="Slike/pizza_prilozi/pizza_luk_d.png" alt="" class="preslika" style="display:none;">
-					<img src="Slike/pizza_prilozi/nista.png" alt="" class=""> 
+					<img src="Slike/pizza_prilozi/nista.png" alt="" class="nistaSlika"> 
 				</div>
 			</div>
 			
@@ -457,7 +456,7 @@
 	</div>
 	
 	</br>
-
+	
 	<?php
 /*
 $servername = "localhost";
