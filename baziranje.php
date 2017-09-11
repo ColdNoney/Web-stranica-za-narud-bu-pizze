@@ -10,6 +10,9 @@
 		<script type="text/javascript" src="script.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
@@ -142,24 +145,155 @@
 			<div class="col-lg-6">
 				<div class="slikaPizze" align="center">
 					<img src="Slike/pizza_prilozi/tijesto.png" alt="Responsive image" class="preslika">
-					<img src="Slike/pizza_prilozi/pizza_rajcica.png" alt="" class="preslika"> <!--style="display:none;"-->
-					<img src="Slike/pizza_prilozi/pizza_kukuruz.png" alt="" class="preslika"> <!--style="display:none;"-->
-					<img src="Slike/pizza_prilozi/pizza_salata.png" alt="" class="preslika"> <!--style="display:none;"-->
-					<img src="Slike/pizza_prilozi/pizza_gljive.png" alt="" class="preslika"> <!--style="display:none;"-->
-					<img src="Slike/pizza_prilozi/pizza_sir.png" alt="" class="preslika"> <!--style="display:none;"-->
-					<img src="Slike/pizza_prilozi/pizza_sir4.png" alt="" class="preslika"> <!--style="display:none;"-->
-					<img src="Slike/pizza_prilozi/pizza_masline.png" alt="" class="preslika"> <!--style="display:none;"-->
-					<img src="Slike/pizza_prilozi/pizza_sunka.png" alt="" class="preslika"> <!--style="display:none;"-->
-					<img src="Slike/pizza_prilozi/pizza_tuna.png" alt="" class="preslika"> <!--style="display:none;"-->
-					<img src="Slike/pizza_prilozi/pizza_paprika.png" alt="" class="preslika"> <!--style="display:none;"-->
-					<img src="Slike/pizza_prilozi/pizza_kulen.png" alt="" class="preslika"> <!--style="display:none;"-->
-					<img src="Slike/pizza_prilozi/pizza_luk.png" alt="" class="luk"> <!--style="display:none;"-->
+					<img src="Slike/pizza_prilozi/pizza_rajcica.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_kukuruz.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_salata.png" alt="" class="preslika" style="display:none;" > 
+					<img src="Slike/pizza_prilozi/pizza_gljive.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_sir.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_sir4.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_masline.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_sunka.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_tuna.png" alt="" class="preslika" style="display:none;">
+					<img src="Slike/pizza_prilozi/pizza_paprika.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_kulen.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_luk.png" alt="" class="preslika" style="display:none;">
+					<img src="Slike/pizza_prilozi/pizza_kukuruz_l.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_salata_l.png" alt="" class="preslika" style="display:none;" > 
+					<img src="Slike/pizza_prilozi/pizza_gljive_l.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_sir_l.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_sir4_l.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_masline_l.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_sunka_l.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_tuna_l.png" alt="" class="preslika" style="display:none;">
+					<img src="Slike/pizza_prilozi/pizza_paprika_l.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_kulen_l.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_luk_l.png" alt="" class="preslika" style="display:none;">
+					<img src="Slike/pizza_prilozi/pizza_kukuruz_d.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_salata_d.png" alt="" class="preslika" style="display:none;" > 
+					<img src="Slike/pizza_prilozi/pizza_gljive_d.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_sir_d.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_sir4_d.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_masline_d.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_sunka_d.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_tuna_d.png" alt="" class="preslika" style="display:none;">
+					<img src="Slike/pizza_prilozi/pizza_paprika_d.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_kulen_d.png" alt="" class="preslika" style="display:none;"> 
+					<img src="Slike/pizza_prilozi/pizza_luk_d.png" alt="" class="preslika" style="display:none;">
+					<img src="Slike/pizza_prilozi/nista.png" alt="" class=""> 
 				</div>
 			</div>
 			
 			<!--Druga tablica sa sastojcima -->
 			<div class="col-lg-3">
-				<div id="tablicaD" class="skriveno">
+				<div id="tablicaD" class="hidden">
+					<table id="hiddenTable" class="table table-hover tablicaD">
+						<thead>
+						  <tr>
+							<th>Ime Sastojka</th>
+							<th>Cijena</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value=""> Kukuruz </label>
+							</div>
+							</td>
+							<td>+1 kn</td>
+						  </tr>
+						  <tr>
+							<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value=""> Rajčica </label>
+							</div>
+							</td>
+							<td>+1 kn</td>
+						  </tr>
+						  <tr>
+							<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value=""> Sir </label>
+							</div>
+							</td>
+							<td>+1 kn</td>
+						  </tr>
+						  <tr>
+							<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value=""> Paprika </label>
+							</div>
+							</td>
+							<td>+1 kn</td>
+						  </tr>
+						  <tr>
+							<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value=""> Gljive </label>
+							</div>
+							</td>
+							<td>+1 kn</td>
+						  </tr>
+						  <tr>
+							<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value=""> Kulen </label>
+							</div>
+							</td>
+							<td>+1 kn</td>
+						  </tr>
+						  <tr>
+							<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value=""> Luk </label>
+							</div>
+							</td>
+							<td>+1 kn</td>
+						  </tr>
+						  <tr>
+							<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value=""> Masline </label>
+							</div>
+							</td>
+							<td>+1 kn</td>
+						  </tr>
+						  <tr>
+							<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value=""> Salata </label>
+							</div>
+							</td>
+							<td>+1 kn</td>
+						  </tr>
+						  <tr>
+							<<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value=""> 4 vrste sira </label>
+							</div>
+							</td>
+							<td>+1 kn</td>
+						  </tr>
+						  <tr>
+							<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value=""> Tuna </label>
+							</div>
+							</td>
+							<td>+1 kn</td>
+						  </tr>
+						  <tr>
+							<td>
+							<div class="checkbox">
+							  <label><input type="checkbox" value=""> Šunka </label>
+							</div>
+							</td>
+							<td>+1 kn</td>
+						  </tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="tablica3" class="hiden">
 					<table id="hiddenTable" class="table table-hover">
 						<thead>
 						  <tr>
@@ -312,24 +446,12 @@
 	
 	<div class="container" >
 		<div class="row justify-content-center">
-			<div class="col-lg-2 col-xs-4">
+			<div class="col-lg-2 col-xs-6">
 				<button type="button" class="btn btn-danger btn-lg">ODUSTANI</button>
+				<p> </p>
 			</div>
-			<div class="col-lg-2 col-xs-4">
-				<button id="myBtn"class="btn btn-danger btn-lg naruciButton">NARUČI</button>
-				<div id="myModal" class="modal">
-				<!-- Modal content -->
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <span class="close">&times;</span>
-					  <h2>Naručili ste pizzu!</h2>
-					</div>
-					<div class="modal-body">
-					  <p>Možete naručiti još pizza ili završiti narudžbu</p>
-					</div>
-				  </div>
-
-				</div>
+			<div class="col-lg-2 col-xs-6">
+				<button type ="button" class="btn btn-danger btn-lg naruciButton">NARUČI</button>
 			</div>
 		</div>
 	</div>
