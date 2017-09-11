@@ -201,7 +201,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="" id="upaliRajcica"> Rajčica </label>
+							  <label><input type="checkbox" value="" id="upaliRajcica2"> Rajčica </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -309,7 +309,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="" id="upaliRajcica"> Rajčica </label>
+							  <label><input type="checkbox" value="" id="upaliRajcica3"> Rajčica </label>
 							</div>
 							</td>
 							<td>+1 kn</td>

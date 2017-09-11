@@ -1,5 +1,4 @@
 
-	
 	$('#upaliKukuruzL').change(function(){
 		if(this.checked) {
 			$('#kukuruzL').show();
@@ -31,6 +30,23 @@
 			$('#rajcica').hide();
 		}
 	});
+	
+	$('#upaliRajcica2').change(function(){
+		if(this.checked) {
+			$('#rajcica').show();
+		} else {
+			$('#rajcica').hide();
+		}
+	});
+	
+	$('#upaliRajcica3').change(function(){
+		if(this.checked) {
+			$('#rajcica').show();
+		} else {
+			$('#rajcica').hide();
+		}
+	});
+	
 	
 	$('#upaliMasline').change(function(){
 		if(this.checked) {
