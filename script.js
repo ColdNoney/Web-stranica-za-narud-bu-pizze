@@ -2,10 +2,16 @@
  $('#showTable').click(function() {        
          $('#tablicaL').show();
 		 $('#tablicaD').show();
+		 $('#brojPizza').show();
+		 $('#potvrda').show();
+		 $('.buttons').hide();
     });
 	
 	$('#showTable2').click(function() {        
          $('#tablica3').show();
+		 $('#brojPizza').show();
+		 $('#potvrda').show();
+		 $('.buttons').hide();
     });
 
 	$('#upaliKukuruzL').change(function(){

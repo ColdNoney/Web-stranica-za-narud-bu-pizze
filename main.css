@@ -15,6 +15,7 @@ body {
 	margin-right: 10px;
 }
 
+
 .jumbotron {
 	background-image: url(Slike/pizza_nav.jpg);
 }
@@ -53,6 +54,7 @@ button {
 table td {
 	padding: 0px !important;
 }
+
 
 #stablicaD {
 	position: absolute;

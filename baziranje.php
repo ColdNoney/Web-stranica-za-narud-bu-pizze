@@ -406,20 +406,20 @@
 	
 	<!--Buttoni za odabir opcije narudzbe pizze-->
 	<div class="container">
-		<div class="row justify-content-center">
+		<div class="row justify-content-center buttons">
 			<div class="col-lg-2 col-xs-4">
 				<button type="button" class="btn btn-danger btn-lg" id="showTable">POLA POLA</button>
 				<p>*Izbor različitih sastojaka na polovicama pizze</p>
 			</div>
-			<div class="col-lg-2 col-xs-4">
+			<div class="col-lg-2 col-xs-4 buttons">
 				<button type="button" class="btn btn-danger btn-lg" id="showTable2">CIJELA PIZZA</button>
 				<p>*Izbor jednakih sastojaka na cijeloj pizzi</p>
 			</div>
 		</div>
 	</div>
 	
-	<div class="container">
-		<div class="row justify-content-center" id="skriveno">
+	<div class="container hidden" id="brojPizza">
+		<div class="row justify-content-center">
 			<b class="brojPizza"> Broj ovakvih pizza: </b>
 			<select>
 			  <option value="1">1</option>
@@ -440,10 +440,10 @@
 	
 	<br>
 	
-	<div class="container" >
+	<div class="container hidden" id="potvrda">
 		<div class="row justify-content-center">
 			<div class="col-lg-2 col-xs-6">
-				<button type="button" class="btn btn-danger btn-lg">ODUSTANI</button>
+				<button type="button" class="btn btn-danger btn-lg" value="Refresh Page" onClick="window.location.reload()">ODUSTANI</button>
 				<p> </p>
 			</div>
 			<div class="col-lg-2 col-xs-6">
