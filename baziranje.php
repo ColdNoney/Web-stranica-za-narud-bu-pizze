@@ -27,7 +27,7 @@
 	<div class="container">    
 		<div class="row">
 			<div class="col-lg-3">
-				<div id="tablicaL" class="skriveno">
+				<div id="tablicaL" class="hidden">
 					<table id="hiddenTable" class="table table-hover">
 						<thead>
 						  <tr>
@@ -47,7 +47,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="" id="upaliRajcica"> Rajčica </label>
+							  <label><input type="checkbox" value="" id="upaliRajcica"> Rajčica (cijela) </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -181,7 +181,7 @@
 			
 			<!--Druga tablica sa sastojcima -->
 			<div class="col-lg-3">
-				<div id="tablicaD" class="hiden">
+				<div id="tablicaD" class="hidden">
 					<table id="hiddenTable" class="table table-hover tablicaD">
 						<thead>
 						  <tr>
@@ -201,7 +201,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="" id="upaliRajcica2"> Rajčica </label>
+							  <label><input type="checkbox" value="" id="upaliRajcica2"> Rajčica (cijela) </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -408,11 +408,11 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-2 col-xs-4">
-				<button type="button" class="btn btn-danger btn-lg">POLA POLA</button>
+				<button type="button" class="btn btn-danger btn-lg" id="showTable">POLA POLA</button>
 				<p>*Izbor različitih sastojaka na polovicama pizze</p>
 			</div>
 			<div class="col-lg-2 col-xs-4">
-				<button type="button" onclick="document.getElementById('tablicaD').style.display='block'" class="btn btn-danger btn-lg">CIJELA PIZZA</button>
+				<button type="button" class="btn btn-danger btn-lg" id="showTable2">CIJELA PIZZA</button>
 				<p>*Izbor jednakih sastojaka na cijeloj pizzi</p>
 			</div>
 		</div>

@@ -1,4 +1,13 @@
 
+ $('#showTable').click(function() {        
+         $('#tablicaL').show();
+		 $('#tablicaD').show();
+    });
+	
+	$('#showTable2').click(function() {        
+         $('#tablica3').show();
+    });
+
 	$('#upaliKukuruzL').change(function(){
 		if(this.checked) {
 			$('#kukuruzL').show();
