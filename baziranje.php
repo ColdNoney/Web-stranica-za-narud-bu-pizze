@@ -290,7 +290,7 @@
 	
 	<div class="container">
 		<div class="row justify-content-center" id="skriveno">
-			<b> Broj ovakvih pizza: </b>
+			<b class="brojPizza"> Broj ovakvih pizza: </b>
 			<select>
 			  <option value="1">1</option>
 			  <option value="2">2</option>
@@ -303,10 +303,12 @@
 			  <option value="9">9</option>
 			  <option value="10">10</option>
 			</select>
-			<b> Ukupna cijena: </b>
+			<b class="izracunCijene"> Ukupna cijena: </b>
 			</br>
 		</div>
 	</div>
+	
+	</br>
 	
 	<div class="container" >
 		<div class="row justify-content-center">
@@ -314,7 +316,7 @@
 				<button type="button" class="btn btn-danger btn-lg">ODUSTANI</button>
 			</div>
 			<div class="col-lg-2 col-xs-4">
-				<button id="myBtn"class="btn btn-danger btn-lg">NARUČI</button>
+				<button id="myBtn"class="btn btn-danger btn-lg naruciButton">NARUČI</button>
 				<div id="myModal" class="modal">
 				<!-- Modal content -->
 				  <div class="modal-content">
@@ -333,9 +335,9 @@
 	</div>
 	
 	</br>
-	
-	<?php
 
+	<?php
+/*
 $servername = "localhost";
 $username = "username";
 $password = "password";
@@ -350,6 +352,7 @@ catch(PDOException $e)
 	{
 	echo "Connection failed: " . $e->getMessage();
 	}
+	*/
 ?>
 
 	</body>
