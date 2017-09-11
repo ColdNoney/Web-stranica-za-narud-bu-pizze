@@ -1,7 +1,4 @@
 
-$(document).ready(function() {
-	
-	
 	
 	$('#upaliKukuruzL').change(function(){
 		if(this.checked) {
@@ -275,5 +272,3 @@ $(document).ready(function() {
 			$('#paprikaD').hide();
 		}
 	});
-	
-});
