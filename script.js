@@ -1,5 +1,6 @@
 
- $('#showTable').click(function() {        
+	//funkcije za pokazivanje tablica
+	$('#showTable').click(function() {        
          $('#tablicaL').show();
 		 $('#tablicaD').show();
 		 $('#brojPizza').show();
@@ -14,6 +15,49 @@
 		 $('.buttons').hide();
     });
 
+	//funkcija za spremanje inputa u bazu podataka
+	$("#spremi").click(function(){
+
+    $.post($("#myform").attr("action"), $("#myform:input").serializeArray(), function(info){$("#result").html(info);});
+    });
+	$("#myform").submit(function(){
+    return false;
+    });
+	
+	// Funkcija za izracun ukupne cijene 
+	
+	var total = 10;
+
+    function test(item){
+        if(item.checked){
+           total+= parseInt(item.value);
+        }else{
+           total-= parseInt(item.value);
+        }
+        //alert(total);
+        document.getElementById('cijena').innerHTML = total;
+    }
+
+	
+	
+	
+	
+	function ukupno(){
+
+		var e = document.getElementById("odabirBroja");
+		var broj = e.options[e.selectedIndex].value;
+		document.getElementById('cijena').innerHTML = total * broj;
+
+	}
+	ukupno()
+	
+	document.getElementById("odabirBroja").onchange = ukupno;
+	
+	// kraj funkcije
+	
+	
+	// funkcije za prikaz sastojaka
+	
 	$('#upaliKukuruzL').change(function(){
 		if(this.checked) {
 			$('#kukuruzL').show();
