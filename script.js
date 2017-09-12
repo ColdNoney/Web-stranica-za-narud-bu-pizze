@@ -29,6 +29,7 @@
     });
 	
 	// Funkcija za izracun ukupne cijene 	
+	
 	var tijestoCijena = 10;
 	var sastojakCijena = 0;
 
@@ -54,6 +55,21 @@
 	document.getElementById("odabirBroja").onchange = ukupno;
 	
 	var ukupnaCijena = (tijestoCijena + sastojakCijena) * broj;
+	
+	
+	//Rajcica sastojak oznacavanje
+	
+	var chk1 = $("input[type='checkbox'][id='upaliRajcica']");
+	var chk2 = $("input[type='checkbox'][id='upaliRajcica2']");
+
+	chk1.on('change', function(){
+	  chk2.prop('checked',this.checked);
+	});
+	
+	chk2.on('change', function(){
+	  chk1.prop('checked',this.checked);
+	});
+		
 	
 	
 	
