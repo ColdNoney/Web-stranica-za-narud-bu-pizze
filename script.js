@@ -6,6 +6,7 @@
 		 $('#tablicaD').show();
 		 $('#brojPizza').show();
 		 $('#potvrda').show();
+		 $('#myForm').show();
 		 $('.buttons').hide();
     });
 	
@@ -13,6 +14,7 @@
          $('#tablica3').show();
 		 $('#brojPizza').show();
 		 $('#potvrda').show();
+		 $('#myForm').show();
 		 $('.buttons').hide();
     });
 
