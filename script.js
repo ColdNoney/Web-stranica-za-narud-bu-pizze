@@ -27,29 +27,31 @@
     });
 	
 	// Funkcija za izracun ukupne cijene 	
-	
-	var total = 10;
+	var tijestoCijena = 10;
+	var sastojakCijena = 0;
 
     function test(item){
         if(item.checked){
-           total+= parseInt(item.value);
+           sastojakCijena+= parseInt(item.value);
         }else{
-           total-= parseInt(item.value);
+           sastojakCijena-= parseInt(item.value);
         }
-        //alert(total);
-        document.getElementById('cijena').innerHTML = total;
+        //alert(sastojakCijena);
+        document.getElementById('cijena').innerHTML = sastojakCijena + tijestoCijena;
     }
 
 	function ukupno(){
 
 		var e = document.getElementById("odabirBroja");
 		var broj = e.options[e.selectedIndex].value;
-		document.getElementById('cijena').innerHTML = total * broj;
+		document.getElementById('cijena').innerHTML = (sastojakCijena + tijestoCijena) * broj;
 
 	}
 	ukupno()
 	
 	document.getElementById("odabirBroja").onchange = ukupno;
+	
+	var cijena = (x + sastojakCijena) * broj;
 	
 	
 	
