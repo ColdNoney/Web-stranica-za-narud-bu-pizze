@@ -1,14 +1,22 @@
 <?php
 
 try {
-$conn = new PDO("mysql:host=127.0.0.1;dbname=Sastojci", 'root');
-// set the PDO error mode to exception
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-echo "Connected successfully"; 
-}
-catch(PDOException $e)
-{
-echo "Connection failed: " . $e->getMessage();
-}
+	$conn = new PDO("mysql:host=localhost;dbname=Sastojci", 'root');
+	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	
+	$ime = $_POST['ime'];
+	$prezime = $_POST['prezime'];
+	$adresa = $_POST['adresa'];
+	$kontakt = $_POST['kontakt'];
+	
+	$sql = "INSERT INTO narudzba (ime, prezime, adresa, kontakt)
+    VALUES ('$ime', '$prezime', '$adresa', '$kontakt')";
+    $conn->exec($sql);
+    echo "New record created successfully";
+	}
+	catch(PDOException $e)
+	{
+	echo "Connection failed: " . $e->getMessage();
+	}
 
 ?>
