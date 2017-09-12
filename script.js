@@ -51,7 +51,7 @@
 	
 	document.getElementById("odabirBroja").onchange = ukupno;
 	
-	var cijena = (x + sastojakCijena) * broj;
+	var ukupnaCijena = (tijestoCijena + sastojakCijena) * broj;
 	
 	
 	
