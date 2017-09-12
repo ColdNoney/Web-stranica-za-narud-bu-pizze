@@ -1,5 +1,6 @@
 
 	//funkcije za pokazivanje tablica
+	
 	$('#showTable').click(function() {        
          $('#tablicaL').show();
 		 $('#tablicaD').show();
@@ -16,6 +17,7 @@
     });
 
 	//funkcija za spremanje inputa u bazu podataka
+	
 	$("#spremi").click(function(){
 
     $.post($("#myform").attr("action"), $("#myform:input").serializeArray(), function(info){$("#result").html(info);});
@@ -24,7 +26,7 @@
     return false;
     });
 	
-	// Funkcija za izracun ukupne cijene 
+	// Funkcija za izracun ukupne cijene 	
 	
 	var total = 10;
 
@@ -38,10 +40,6 @@
         document.getElementById('cijena').innerHTML = total;
     }
 
-	
-	
-	
-	
 	function ukupno(){
 
 		var e = document.getElementById("odabirBroja");
@@ -53,7 +51,6 @@
 	
 	document.getElementById("odabirBroja").onchange = ukupno;
 	
-	// kraj funkcije
 	
 	
 	// funkcije za prikaz sastojaka
