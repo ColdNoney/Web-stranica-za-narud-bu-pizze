@@ -445,20 +445,7 @@
 	
 	<br>
 	
-	<div class="container hidden" id="potvrda">
-		<div class="row justify-content-center">
-			<div class="col-lg-2 col-xs-6">
-				<button type="button" class="btn btn-danger btn-lg" value="Refresh Page" onClick="window.location.reload()">ODUSTANI</button>
-				<p> </p>
-			</div>
-			<div class="col-lg-2 col-xs-6">
-				<button type ="button" class="btn btn-danger btn-lg naruciButton">NARUČI</button>
-			</div>
-		</div>
-	</div>
-	
-	
-	
+
 		<form id="myForm" class="hidden" action="db.php" method="post" align="center">
 		  Ime:<br>
 		  <input type="text" name="ime" value="">
@@ -472,7 +459,17 @@
 		  Broj telefona:<br>
 		  <input type="text" name="kontakt" value="">
 		  <br><br>
-		  <input type="submit" value="Spremi">
+		  <div class="container hidden" id="potvrda">
+				<div class="row justify-content-center">
+					<div class="col-lg-2 col-xs-6">
+						<button type="button" class="btn btn-danger btn-lg" value="Refresh Page" onClick="window.location.reload()">ODUSTANI</button>
+						<p> </p>
+					</div>
+					<div class="col-lg-2 col-xs-6">
+						<button type ="submit" class="btn btn-danger btn-lg naruciButton" id="spremi">NARUČI</button>
+					</div>
+				</div>
+			</div>
 		</form> 
 	
 	<br>
