@@ -12,11 +12,11 @@ try {
 	$sql = "INSERT INTO narudzba (ime, prezime, adresa, kontakt)
     VALUES ('$ime', '$prezime', '$adresa', '$kontakt')";
     $conn->exec($sql);
-    echo "New record created successfully";
+    echo "Narudžba uspješno pohranjena";
 	}
 	catch(PDOException $e)
 	{
-	echo "Connection failed: " . $e->getMessage();
+	echo "Neuspjela konekcija s bazom: " . $e->getMessage();
 	}
 
 ?>
