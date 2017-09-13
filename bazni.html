@@ -5,14 +5,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link rel="stylesheet" type="text/css" href="main.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		<script src="jquery-3.2.1.min.js"></script>
-		<script src="assets/js/vendor/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-
-		h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-		crossorigin="anonymous"></script>
-		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
 
 	<body>
@@ -33,6 +27,7 @@
 	<div class="container">    
 		<div class="row">
 			<div class="col-lg-3">
+				<form action="db.php" method="post">
 				<div id="tablicaL" class="hidden">
 					<table id="hiddenTable" class="table table-hover">
 						<thead>
@@ -45,7 +40,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliKukuruzL" onClick="test(this);"> Kukuruz </label>
+							  <label><input type="checkbox" value="3" name="sastojciL[]" class="upaliNesto" onClick="test(this);" data-param="kukuruzL"> Kukuruz </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -53,7 +48,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliRajcica" onClick="test(this);"> Rajčica (cijela) </label>
+							  <label><input type="checkbox" value="7" name="sastojciL[]" class="upaliNesto" onClick="test(this);" data-param="rajcica"> Rajčica (cijela) </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -61,7 +56,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliSirL" onClick="test(this);"> Sir </label>
+							  <label><input type="checkbox" value="9" name="sastojciL[]" class="upaliNesto" onClick="test(this);" data-param="sirL"> Sir </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -69,7 +64,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliPaprikaL" onClick="test(this);"> Paprika </label>
+							  <label><input type="checkbox" value="1" name="sastojciL[]" class="upaliNesto" onClick="test(this);" data-param="paprikaL"> Paprika </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -77,7 +72,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliGljiveL" onClick="test(this);"> Gljive </label>
+							  <label><input type="checkbox" value="2" name="sastojciL[]" class="upaliNesto" onClick="test(this);" data-param="gljiveL"> Gljive </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -85,7 +80,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliKulenL" onClick="test(this);"> Kulen </label>
+							  <label><input type="checkbox" value="4" name="sastojciL[]" class="upaliNesto" onClick="test(this);" data-param="kulenL"> Kulen </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -93,7 +88,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliLukL" onClick="test(this);"> Luk </label>
+							  <label><input type="checkbox" value="5" name="sastojciL[]" class="upaliNesto" onClick="test(this);" data-param="lukL"> Luk </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -101,7 +96,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliMaslineL" onClick="test(this);"> Masline </label>
+							  <label><input type="checkbox" value="6" name="sastojciL[]" class="upaliNesto" onClick="test(this);" data-param="maslineL"> Masline </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -109,7 +104,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliSalataL" onClick="test(this);"> Salata </label>
+							  <label><input type="checkbox" value="8" name="sastojciL[]" class="upaliNesto" onClick="test(this);" data-param="salataL"> Salata </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -117,7 +112,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliSir4L" onClick="test(this);"> 4 vrste sira </label>
+							  <label><input type="checkbox" value="10" name="sastojciL[]" class="upaliNesto" onClick="test(this);" data-param="sir4L"> 4 vrste sira </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -125,7 +120,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliTunaL" onClick="test(this);"> Tuna </label>
+							  <label><input type="checkbox" value="12" name="sastojciL[]" class="upaliNesto" onClick="test(this);" data-param="tunaL"> Tuna </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -133,7 +128,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliSunkaL" onClick="test(this);"> Šunka </label>
+							  <label><input type="checkbox" value="11" name="sastojciL[]" class="upaliNesto" onClick="test(this);" data-param="sunkaL"> Šunka </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -147,40 +142,40 @@
 			<div class="col-lg-6">
 				<div class="slikaPizze" align="center">
 					<img src="Slike/pizza_prilozi/tijesto.png" alt="Responsive image" class="preslika">
-					<img src="Slike/pizza_prilozi/pizza_rajcica.png" alt="" class="preslika sakriveno" id="rajcica"> 
-					<img src="Slike/pizza_prilozi/pizza_kukuruz.png" alt="" class="preslika sakriveno" id="kukuruz">
-					<img src="Slike/pizza_prilozi/pizza_salata.png" alt="" class="preslika sakriveno" id="salata"> 
-					<img src="Slike/pizza_prilozi/pizza_gljive.png" alt="" class="preslika sakriveno" id="gljive"> 
-					<img src="Slike/pizza_prilozi/pizza_sir.png" alt="" class="preslika sakriveno" id="sir"> 
-					<img src="Slike/pizza_prilozi/pizza_sir4.png" alt="" class="preslika sakriveno" id="sir4"> 
-					<img src="Slike/pizza_prilozi/pizza_masline.png" alt="" class="preslika sakriveno" id="masline"> 
-					<img src="Slike/pizza_prilozi/pizza_sunka.png" alt="" class="preslika sakriveno" id="sunka"> 
-					<img src="Slike/pizza_prilozi/pizza_tuna.png" alt="" class="preslika sakriveno" id="tuna">
-					<img src="Slike/pizza_prilozi/pizza_paprika.png" alt="" class="preslika sakriveno" id="paprika"> 
-					<img src="Slike/pizza_prilozi/pizza_kulen.png" alt="" class="preslika sakriveno" id="kulen"> 
-					<img src="Slike/pizza_prilozi/pizza_luk.png" alt="" class="preslika sakriveno" id="luk">
-					<img src="Slike/pizza_prilozi/pizza_kukuruz_l.png" alt="" class="preslika sakriveno" id="kukuruzL"> 
-					<img src="Slike/pizza_prilozi/pizza_salata_l.png" alt="" class="preslika sakriveno" id="salataL"> 
-					<img src="Slike/pizza_prilozi/pizza_gljive_l.png" alt="" class="preslika sakriveno" id="gljiveL"> 
-					<img src="Slike/pizza_prilozi/pizza_sir_l.png" alt="" class="preslika sakriveno" id="sirL"> 
-					<img src="Slike/pizza_prilozi/pizza_sir4_l.png" alt="" class="preslika sakriveno" id="sir4L"> 
-					<img src="Slike/pizza_prilozi/pizza_masline_l.png" alt="" class="preslika sakriveno" id="maslineL"> 
-					<img src="Slike/pizza_prilozi/pizza_sunka_l.png" alt="" class="preslika sakriveno" id="sunkaL"> 
-					<img src="Slike/pizza_prilozi/pizza_tuna_l.png" alt="" class="preslika sakriveno" id="tunaL">
-					<img src="Slike/pizza_prilozi/pizza_paprika_l.png" alt="" class="preslika sakriveno" id="paprikaL"> 
-					<img src="Slike/pizza_prilozi/pizza_kulen_l.png" alt="" class="preslika sakriveno" id="kulenL"> 
-					<img src="Slike/pizza_prilozi/pizza_luk_l.png" alt="" class="preslika sakriveno" id="lukL">
-					<img src="Slike/pizza_prilozi/pizza_kukuruz_d.png" alt="" class="preslika sakriveno" id="kukuruzD"> 
-					<img src="Slike/pizza_prilozi/pizza_salata_d.png" alt="" class="preslika sakriveno" id="salataD"> 
-					<img src="Slike/pizza_prilozi/pizza_gljive_d.png" alt="" class="preslika sakriveno" id="gljiveD"> 
-					<img src="Slike/pizza_prilozi/pizza_sir_d.png" alt="" class="preslika sakriveno" id="sirD"> 
-					<img src="Slike/pizza_prilozi/pizza_sir4_d.png" alt="" class="preslika sakriveno" id="sir4D"> 
-					<img src="Slike/pizza_prilozi/pizza_masline_d.png" alt="" class="preslika sakriveno" id="maslineD"> 
-					<img src="Slike/pizza_prilozi/pizza_sunka_d.png" alt="" class="preslika sakriveno" id="sunkaD"> 
-					<img src="Slike/pizza_prilozi/pizza_tuna_d.png" alt="" class="preslika sakriveno" id="tunaD">
-					<img src="Slike/pizza_prilozi/pizza_paprika_d.png" alt="" class="preslika sakriveno" id="paprikaD"> 
-					<img src="Slike/pizza_prilozi/pizza_kulen_d.png" alt="" class="preslika sakriveno" id="kulenD"> 
-					<img src="Slike/pizza_prilozi/pizza_luk_d.png" alt="" class="preslika sakriveno" id="lukD">
+					<img data-src="Slike/pizza_prilozi/pizza_rajcica.png" alt="" class="preslika sakriveno" id="rajcica"> 
+					<img data-src="Slike/pizza_prilozi/pizza_kukuruz.png" alt="" class="preslika sakriveno" id="kukuruz">
+					<img data-src="Slike/pizza_prilozi/pizza_salata.png" alt="" class="preslika sakriveno" id="salata"> 
+					<img data-src="Slike/pizza_prilozi/pizza_gljive.png" alt="" class="preslika sakriveno" id="gljive"> 
+					<img data-src="Slike/pizza_prilozi/pizza_sir.png" alt="" class="preslika sakriveno" id="sir"> 
+					<img data-src="Slike/pizza_prilozi/pizza_sir4.png" alt="" class="preslika sakriveno" id="sir4"> 
+					<img data-src="Slike/pizza_prilozi/pizza_masline.png" alt="" class="preslika sakriveno" id="masline"> 
+					<img data-src="Slike/pizza_prilozi/pizza_sunka.png" alt="" class="preslika sakriveno" id="sunka"> 
+					<img data-src="Slike/pizza_prilozi/pizza_tuna.png" alt="" class="preslika sakriveno" id="tuna">
+					<img data-src="Slike/pizza_prilozi/pizza_paprika.png" alt="" class="preslika sakriveno" id="paprika"> 
+					<img data-src="Slike/pizza_prilozi/pizza_kulen.png" alt="" class="preslika sakriveno" id="kulen"> 
+					<img data-src="Slike/pizza_prilozi/pizza_luk.png" alt="" class="preslika sakriveno" id="luk">
+					<img data-src="Slike/pizza_prilozi/pizza_kukuruz_l.png" alt="" class="preslika sakriveno" id="kukuruzL"> 
+					<img data-src="Slike/pizza_prilozi/pizza_salata_l.png" alt="" class="preslika sakriveno" id="salataL"> 
+					<img data-src="Slike/pizza_prilozi/pizza_gljive_l.png" alt="" class="preslika sakriveno" id="gljiveL"> 
+					<img data-src="Slike/pizza_prilozi/pizza_sir_l.png" alt="" class="preslika sakriveno" id="sirL"> 
+					<img data-src="Slike/pizza_prilozi/pizza_sir4_l.png" alt="" class="preslika sakriveno" id="sir4L"> 
+					<img data-src="Slike/pizza_prilozi/pizza_masline_l.png" alt="" class="preslika sakriveno" id="maslineL"> 
+					<img data-src="Slike/pizza_prilozi/pizza_sunka_l.png" alt="" class="preslika sakriveno" id="sunkaL"> 
+					<img data-src="Slike/pizza_prilozi/pizza_tuna_l.png" alt="" class="preslika sakriveno" id="tunaL">
+					<img data-src="Slike/pizza_prilozi/pizza_paprika_l.png" alt="" class="preslika sakriveno" id="paprikaL"> 
+					<img data-src="Slike/pizza_prilozi/pizza_kulen_l.png" alt="" class="preslika sakriveno" id="kulenL"> 
+					<img data-src="Slike/pizza_prilozi/pizza_luk_l.png" alt="" class="preslika sakriveno" id="lukL">
+					<img data-src="Slike/pizza_prilozi/pizza_kukuruz_d.png" alt="" class="preslika sakriveno" id="kukuruzD"> 
+					<img data-src="Slike/pizza_prilozi/pizza_salata_d.png" alt="" class="preslika sakriveno" id="salataD"> 
+					<img data-src="Slike/pizza_prilozi/pizza_gljive_d.png" alt="" class="preslika sakriveno" id="gljiveD"> 
+					<img data-src="Slike/pizza_prilozi/pizza_sir_d.png" alt="" class="preslika sakriveno" id="sirD"> 
+					<img data-src="Slike/pizza_prilozi/pizza_sir4_d.png" alt="" class="preslika sakriveno" id="sir4D"> 
+					<img data-src="Slike/pizza_prilozi/pizza_masline_d.png" alt="" class="preslika sakriveno" id="maslineD"> 
+					<img data-src="Slike/pizza_prilozi/pizza_sunka_d.png" alt="" class="preslika sakriveno" id="sunkaD"> 
+					<img data-src="Slike/pizza_prilozi/pizza_tuna_d.png" alt="" class="preslika sakriveno" id="tunaD">
+					<img data-src="Slike/pizza_prilozi/pizza_paprika_d.png" alt="" class="preslika sakriveno" id="paprikaD"> 
+					<img data-src="Slike/pizza_prilozi/pizza_kulen_d.png" alt="" class="preslika sakriveno" id="kulenD"> 
+					<img data-src="Slike/pizza_prilozi/pizza_luk_d.png" alt="" class="preslika sakriveno" id="lukD">
 					<img src="Slike/pizza_prilozi/nista.png" alt="" class="nistaSlika"> 
 				</div>
 			</div>
@@ -199,7 +194,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1"  id="upaliKukuruzD" onClick="test(this);"> Kukuruz </label>
+							  <label><input type="checkbox" value="3" name="sastojciD[]" class="upaliNesto" onClick="test(this);" data-param="kukuruzD"> Kukuruz </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -207,7 +202,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliRajcica2" onClick="test(this);"> Rajčica (cijela) </label>
+							  <label><input type="checkbox" value="7" name="sastojciD[]" class="upaliNesto" onClick="test(this);" data-param="rajcica"> Rajčica (cijela) </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -215,7 +210,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliSirD" onClick="test(this);"> Sir </label>
+							  <label><input type="checkbox" value="9" class="upaliNesto" name="sastojciD[]" onClick="test(this);" data-param="sirD"> Sir </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -223,7 +218,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliPaprikaD" onClick="test(this);"> Paprika </label>
+							  <label><input type="checkbox" value="1" class="upaliNesto" name="sastojciD[]" onClick="test(this);" data-param="paprikaD"> Paprika </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -231,7 +226,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliGljiveD" onClick="test(this);"> Gljive </label>
+							  <label><input type="checkbox" value="2" class="upaliNesto" name="sastojciD[]" onClick="test(this);" data-param="gljiveD"> Gljive </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -239,7 +234,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliKulenD" onClick="test(this);"> Kulen </label>
+							  <label><input type="checkbox" value="4" class="upaliNesto" name="sastojciD[]" onClick="test(this);" data-param="kulenD"> Kulen </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -247,7 +242,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliLukD" onClick="test(this);"> Luk </label>
+							  <label><input type="checkbox" value="5" class="upaliNesto" name="sastojciD[]" onClick="test(this);" data-param="lukD"> Luk </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -255,7 +250,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliMaslineD" onClick="test(this);"> Masline </label>
+							  <label><input type="checkbox" value="6" class="upaliNesto" name="sastojciD[]" onClick="test(this);" data-param="maslineD"> Masline </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -263,7 +258,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliSalataD" onClick="test(this);"> Salata </label>
+							  <label><input type="checkbox" value="8" class="upaliNesto" name="sastojciD[]" onClick="test(this);" data-param="salataD"> Salata </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -271,7 +266,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliSir4D" onClick="test(this);"> 4 vrste sira </label>
+							  <label><input type="checkbox" value="10" class="upaliNesto" name="sastojciD[]" onClick="test(this);" data-param="sir4D"> 4 vrste sira </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -279,7 +274,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliTunaD" onClick="test(this);"> Tuna </label>
+							  <label><input type="checkbox" value="12" class="upaliNesto" name="sastojciD[]" onClick="test(this);" data-param="tunaD"> Tuna </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -287,7 +282,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliSunkaD" onClick="test(this);"> Šunka </label>
+							  <label><input type="checkbox" value="11" class="upaliNesto" name="sastojciD[]" onClick="test(this);" data-param="sunkaD"> Šunka </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -296,18 +291,19 @@
 					</table>
 				</div>
 				<div id="tablica3" class="hidden">
-					<table id="hiddenTable" class="table table-hover">
+					<table id="hiddenTable" form="myForm" class="table table-hover">
 						<thead>
 						  <tr>
 							<th>Ime Sastojka</th>
 							<th>Cijena</th>
 						  </tr>
 						</thead>
+						</thead>
 						<tbody>
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliKukuruz" onClick="test(this);"> Kukuruz </label>
+							  <label><input type="checkbox" name="sastojci[]" value="3" class="upaliNesto" onClick="test(this);" data-param="kukuruz"> Kukuruz </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -315,7 +311,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliRajcica3" onClick="test(this);"> Rajčica </label>
+							  <label><input type="checkbox" name="sastojci[]" value="7" class="upaliNesto" onClick="test(this);" data-param="rajcica"> Rajčica </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -323,7 +319,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliSir" onClick="test(this);"> Sir </label>
+							  <label><input type="checkbox" name="sastojci[]" value="9" class="upaliNesto" onClick="test(this);" data-param="sir"> Sir </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -331,7 +327,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliPaprika" onClick="test(this);"> Paprika </label>
+							  <label><input type="checkbox" name="sastojci[]" value="1" class="upaliNesto" onClick="test(this);" data-param="paprika"> Paprika </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -339,7 +335,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliGljive" onClick="test(this);"> Gljive </label>
+							  <label><input type="checkbox" name="sastojci[]" value="2" class="upaliNesto" onClick="test(this);" data-param="gljive"> Gljive </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -347,7 +343,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliKulen" onClick="test(this);"> Kulen </label>
+							  <label><input type="checkbox" name="sastojci[]" value="4" class="upaliNesto" onClick="test(this);" data-param="kulen"> Kulen </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -355,7 +351,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliLuk" onClick="test(this);"> Luk </label>
+							  <label><input type="checkbox" name="sastojci[]" value="5" class="upaliNesto" onClick="test(this);" data-param="luk"> Luk </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -363,7 +359,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliMasline" onClick="test(this);"> Masline </label>
+							  <label><input type="checkbox" name="sastojci[]" value="6" class="upaliNesto" onClick="test(this);" data-param="masline"> Masline </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -371,7 +367,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliSalata" onClick="test(this);"> Salata </label>
+							  <label><input type="checkbox" name="sastojci[]" value="8" class="upaliNesto" onClick="test(this);" data-param="salata"> Salata </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -379,7 +375,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliSir4" onClick="test(this);"> 4 vrste sira </label>
+							  <label><input type="checkbox" name="sastojci[]" value="10" class="upaliNesto" onClick="test(this);" data-param="sir4"> 4 vrste sira </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -387,7 +383,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliTuna" onClick="test(this);"> Tuna </label>
+							  <label><input type="checkbox" name="sastojci[]" value="12" class="upaliNesto" onClick="test(this);" data-param="tuna"> Tuna </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -395,7 +391,7 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="1" id="upaliSunka" onClick="test(this);"> Šunka </label>
+							  <label><input type="checkbox" name="sastojci[]" value="11" class="upaliNesto" onClick="test(this);" data-param="sunka"> Šunka </label>
 							</div>
 							</td>
 							<td>+1 kn</td>
@@ -427,7 +423,7 @@
 	<div class="container hidden" id="brojPizza">
 		<div class="row justify-content-center">
 			<b class="brojPizza"> Broj ovakvih pizza: </b>
-			<select id="odabirBroja">
+			<select id="odabirBroja" name="broj_pizza">
 			  <option value="1">1</option>
 			  <option value="2">2</option>
 			  <option value="3">3</option>
@@ -446,7 +442,8 @@
 	<br>
 	
 
-		<form id="myForm" class="hidden" action="db.php" method="post" align="center">
+	
+		<div id="myForm" class="hidden" align="center">
 		  Ime:<br>
 		  <input type="text" name="ime" value="">
 		  <br>
@@ -474,8 +471,9 @@
 	
 	<br>
 	
-	<script src="jquery-3.2.1.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="script.js"></script>
 		
 	</body>
