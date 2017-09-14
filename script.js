@@ -35,11 +35,11 @@
 
     function test(item){
         if(item.checked){
-           sastojakCijena+= parseInt(item.value);
+           sastojakCijena+= parseInt(item.dataset.cijena);
         }else{
-           sastojakCijena-= parseInt(item.value);
+           sastojakCijena-= parseInt(item.dataset.cijena);
         }
-        document.getElementById('cijena').innerHTML = sastojakCijena + tijestoCijena;
+        document.getElementById('cijena').innerHTML = tijestoCijena + sastojakCijena;
     }
 
 	function ukupno(){
@@ -72,7 +72,7 @@
 	
 	
 	
-	// funkcija	za prikaz sastojaka
+	// funkcija za prikaz sastojaka
 	
 	$('.upaliNesto').change(function(){
 		var imageId = $(this).attr('data-param');

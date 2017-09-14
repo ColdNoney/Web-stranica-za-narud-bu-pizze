@@ -27,6 +27,7 @@ try {
 	$ids = join("','", $sviSastojci);   
 	$selectSastojaciSql = "SELECT * FROM sastojak WHERE IDsastojka IN ('$ids')";
 	$result = $conn->query($selectSastojaciSql);
+	
 	//izracunaj cijenu
 	$cijena = 10;
 	$results = $result->fetchAll();
@@ -37,16 +38,10 @@ try {
 				$cijena += $results[$i]['CijenaSastojka'];
 			}
 		}
-		/**while($row = $result->fetch(PDO::FETCH_ASSOC)) {
-			var_dump($id);
-			if($row['IDsastojka'] == $id) {
-				$cijena += $row['CijenaSastojka'];
-			}
-		}**/
 	}
 	$cijena *= $broj_pizza;
-	$sql = "INSERT INTO narudzba (ime, prezime, adresa, kontakt, cijena)
-    VALUES ('$ime', '$prezime', '$adresa', '$kontakt', $cijena)";
+	$sql = "INSERT INTO narudzba (ime, prezime, adresa, kontakt, cijena, brojPizza)
+    VALUES ('$ime', '$prezime', '$adresa', '$kontakt', '$cijena', '$broj_pizza')";
     $conn->exec($sql);
 	
 	$narudba_id = $conn->lastInsertId();
