@@ -29,7 +29,7 @@
 			<div class="col-lg-3">
 				<form action="db.php" method="post">
 				<div id="tablicaL" class="hidden">
-					<table id="hiddenTable" class="table table-hover">
+					<table class="table table-hover">
 						<thead>
 						  <tr>
 							<th>Ime Sastojka</th>
@@ -48,10 +48,10 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="7" name="sastojciL[]" id="upaliRajcica" data-cijena="5" class="upaliNesto" onClick="test(this);" data-param="rajcica"> Rajčica (cijela) </label>
+							  <label><input type="checkbox" value="24" name="sastojciL[]" id="upaliRajcica" data-cijena="6" class="upaliNesto" onClick="test(this);" data-param="rajcica"> Rajčica (cijela) </label>
 							</div>
 							</td>
-							<td align="center">+5 kn</td>
+							<td align="center">+6 kn</td>
 						  </tr>
 						  <tr>
 							<td>
@@ -183,7 +183,7 @@
 			<!--Druga tablica sa sastojcima -->
 			<div class="col-lg-3">
 				<div id="tablicaD" class="hidden">
-					<table id="hiddenTable" class="table table-hover tablicaD">
+					<table class="table table-hover tablicaD">
 						<thead>
 						  <tr>
 							<th>Ime Sastojka</th>
@@ -202,10 +202,10 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" value="7" name="sastojciD[]" id="upaliRajcica2" data-cijena="5" class="upaliNesto" onClick="test(this);" data-param="rajcica"> Rajčica (cijela) </label>
+							  <label><input type="checkbox" value="24" name="sastojciD[]" id="upaliRajcica2" data-cijena="6" class="upaliNesto" onClick="test(this);" data-param="rajcica"> Rajčica (cijela) </label>
 							</div>
 							</td>
-							<td align="center">+5 kn</td>
+							<td align="center">+6 kn</td>
 						  </tr>
 						  <tr>
 							<td>
@@ -291,7 +291,7 @@
 					</table>
 				</div>
 				<div id="tablica3" class="hidden">
-					<table id="hiddenTable" form="myForm" class="table table-hover">
+					<table form="myForm" class="table table-hover">
 						<thead>
 						  <tr>
 							<th>Ime Sastojka</th>
@@ -311,10 +311,10 @@
 						  <tr>
 							<td>
 							<div class="checkbox">
-							  <label><input type="checkbox" name="sastojci[]" value="7" data-cijena="5" class="upaliNesto" onClick="test(this);" data-param="rajcica"> Rajčica </label>
+							  <label><input type="checkbox" name="sastojci[]" value="7" data-cijena="6" class="upaliNesto" onClick="test(this);" data-param="rajcica"> Rajčica </label>
 							</div>
 							</td>
-							<td align="center">+5 kn</td>
+							<td align="center">+6 kn</td>
 						  </tr>
 						  <tr>
 							<td>
@@ -435,15 +435,17 @@
 			  <option value="9">9</option>
 			  <option value="10">10</option>
 			</select>
-			<b class="izracunCijene"> Ukupna cijena: </b> <span id="cijena"> </span> <p>kn</p>
+			<b class="izracunCijene"> Ukupna cijena: </b> <span id="cijena"> </span> <p>kn</p>			
 		</div>
 	</div>
+	
 	
 	<br>
 	
 
 	
 		<div id="myForm" class="hidden" align="center">
+		<p>(Cijena tijesta iznosi 10 kuna)</p>
 		  Ime:<br>
 		  <input type="text" name="ime" value="" required oninvalid="this.setCustomValidity('Ovo polje je obavezno')">
 		  <br>
