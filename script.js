@@ -18,43 +18,39 @@
 		 $('.buttons').hide();
     });
 
-	//funkcija za spremanje inputa u bazu podataka
-	
-	$("#spremi").click(function(){
-
-    $.post($("#myform").attr("action"), $("#myform:input").serializeArray(), function(info){$("#result").html(info);});
-    });
-	$("#myform").submit(function(){
-    return false;
-    });
 	
 	// Funkcija za izracun ukupne cijene 	
 	
 	var tijestoCijena = 10;
 	var sastojakCijena = 0;
+	var ukupnaCijena = 0;
+	var broj = 1;
 
     function test(item){
         if(item.checked){
-           sastojakCijena+= parseInt(item.dataset.cijena);
+			ukupnaCijena = (tijestoCijena + sastojakCijena) * broj;
+			sastojakCijena+= parseInt(item.dataset.cijena);
+			var trenutniSastojak = parseInt(item.dataset.cijena);
+			document.getElementById('cijena').innerHTML = ukupnaCijena + trenutniSastojak;
         }else{
-           sastojakCijena-= parseInt(item.dataset.cijena);
+			ukupnaCijena = (tijestoCijena + sastojakCijena) * broj;
+			sastojakCijena-= parseInt(item.dataset.cijena);
+			trenutniSastojak = parseInt(item.dataset.cijena);
+			document.getElementById('cijena').innerHTML = ukupnaCijena - broj*trenutniSastojak;
         }
-        document.getElementById('cijena').innerHTML = tijestoCijena + sastojakCijena;
     }
 
 	function ukupno(){
 
 		var e = document.getElementById("odabirBroja");
-		var broj = e.options[e.selectedIndex].value;
+		broj = e.options[e.selectedIndex].value;
 		document.getElementById('cijena').innerHTML = (sastojakCijena + tijestoCijena) * broj;
 
 	}
-	ukupno()
+	ukupno();
 	
 	document.getElementById("odabirBroja").onchange = ukupno;
-	
-	var ukupnaCijena = (tijestoCijena + sastojakCijena) * broj;
-	
+		
 	
 	//Rajcica sastojak oznacavanje
 	
